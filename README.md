@@ -1,78 +1,57 @@
 🧬 Protein Sequence Estimation using NLP
-Deep Learning–based Missing Residue Prediction using ProtBERT
+Deep-Learning Based Missing Residue Prediction with ProtBERT
 
-This project uses Natural Language Processing (NLP) techniques and Transformer-based protein models (ProtBERT) to estimate missing amino acids in protein sequences.
-It provides a full-stack ML system with:
+A full-stack AI system that predicts missing amino acids in protein sequences using advanced Transformer-based NLP models.
+Built with Python (ProtBERT), a Node.js backend, and a React frontend for real-time residue completion.
 
-🧠 Python ML backend (ProtBERT masked-LM)
+⭐ Overview
 
-🚀 Node.js API server
+This project uses ProtBERT (Rostlab/prot_bert) — a 420M-parameter protein language model trained on UniRef100 (216M+ sequences) — to intelligently fill missing residues.
 
-🎨 React Frontend UI
+✔ Predicts amino acids for masked positions
+✔ Supports FASTA input
+✔ Provides confidence scores
+✔ Full-stack real-time system
+✔ Clean and interactive UI
 
-🔍 Real-time protein sequence prediction
+🚀 Features
+🔬 AI-Powered Protein Sequence Completion
 
-🧪 Supports FASTA input, missing residue filling, sequence cleaning
+Predicts missing residues (?, _, X, or masked tokens)
 
-📌 Features
-🔬 AI-Powered Protein Analysis
+Automatically cleans FASTA headers
 
-Predicts missing residues (?, _, or masked positions)
+Handles noisy or incomplete protein sequences
 
-Handles partial or noisy sequences (FASTA headers auto-cleaned)
+Returns:
 
-Displays top predicted residues with confidence scores
+Completed sequence
 
-Generates a completed protein sequence
+Top residue predictions
 
-🧬 Model Used
+Confidence probabilities
 
-ProtBERT (Rostlab/prot_bert)
-
-420M parameters
-
-Trained on UniRef100 (216M+ sequences)
-
-Works using masked language modeling (MLM)
-
-💻 Full-Stack Architecture
+🧬 Model Summary
+Model	Parameters	Dataset	Architecture
+ProtBERT	420M	UniRef100	BERT Transformer
+🏗️ Full-Stack Architecture
 Layer	Technology
-Frontend	React, TailwindCSS
+Frontend	React, TailwindCSS, Vite
 Backend	Node.js, Express.js
-ML Engine	Python, Transformers, PyTorch
-ML Model	ProtBERT (local)
-
-PROJECT_NLP/
-│── backend/
-│   ├── server.js
-│   ├── routes/
-│   ├── controllers/
-│   ├── services/
-│   ├── python_scripts/
-│   │   ├── predict.py
-│   │   ├── load_models.py
-│   ├── ml_models/        # (ignored — add model manually)
-│
-│── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── utils/
-│   ├── public/
-│
-│── .gitignore
-│── README.md
-
-
+Machine Learning	Python, Transformers, PyTorch
+Model	ProtBERT (local model directory)
+📁 Project Structure
+<img width="740" height="634" alt="image" src="https://github.com/user-attachments/assets/902fccd9-2c40-4a52-a69f-e2a8944e1c36" />
 
 ⚙️ Installation & Setup
-1️⃣ Clone the repo
-git clone https://github.com/yourusername/protein-nlp.git
-cd protein-nlp
+1️⃣ Clone Repository
+git clone https://github.com/Nehalshaikh8698/Bioinformatics-Project-Protein-Sequence-Estimation-using-NLP.git
 
+cd PROJECT_NLP
 
-🧠 2️⃣ Download the ProtBERT Model (Required)
+2️⃣ Download ProtBERT Model (Required)
 
-ProtBERT is too large for GitHub, so download it manually:
+GitHub cannot store large ML models, so download manually:
 
 from transformers import AutoTokenizer, AutoModelForMaskedLM
 
@@ -82,101 +61,121 @@ model = AutoModelForMaskedLM.from_pretrained("Rostlab/prot_bert")
 tokenizer.save_pretrained("./backend/ml_models/protbert")
 model.save_pretrained("./backend/ml_models/protbert")
 
-
-
-🚀 3️⃣ Install Backend
+3️⃣ Backend Setup (Node.js + Python)
 cd backend
 npm install
-
-Run backend:
 npm start
-Backend starts on:
-http://localhost:5000
 
 
+Backend runs at:
+👉 http://localhost:5000
 
-
-💻 4️⃣ Install Frontend
-bash
-Copy code
+4️⃣ Frontend Setup (React + Vite)
 cd frontend
 npm install
 npm start
-Frontend starts on:
-
-arduino
-Copy code
-http://localhost:3000
 
 
+Frontend runs at:
+👉 http://localhost:3000
 
-🧪 Testing the API
-Missing residue prediction
+🧪 API Usage
+Predict missing residues:
 curl -X POST http://localhost:5000/api/models/fill-missing \
   -H "Content-Type: application/json" \
   -d '{"model":"protbert","sequence":"MKTI?ALSYIF"}'
 
-
-  🎨 Frontend Features
+🎨 Frontend Highlights
 
 FASTA cleanup
-Sequence length counter
-Model selection (ProtBERT/others future-ready)
-Confidence table with ranked predictions
-Completed sequence display
+
+Residue prediction visualization
+
+Confidence score ranking
+
 Dark mode
 
-📊 Example Prediction
+Fully responsive design
 
-Input sequence:
+Real-time ML processing via backend
+
+📊 Example Output
+Input
 MK?TI?AL?YI
 
-
-Output:
+Output
 Completed: MKLTILALRYI
-Predicted residues at ?, ?, ?
-Confidence scores for each position
+Missing position predictions:
+? → L (0.82)
+? → T (0.71)
+? → R (0.64)
+
+#DEMO:
+#HOME PAGE
+<img width="1128" height="1039" alt="image" src="https://github.com/user-attachments/assets/1efe3875-3537-4bd3-900a-c67117ec69e0" />
+
+#INPUT PAGE
+<img width="1885" height="950" alt="image" src="https://github.com/user-attachments/assets/69a1e3aa-68fb-4134-abb0-54e2adbfc29b" />
+
+#OUPUT PAGE
+<img width="944" height="968" alt="image" src="https://github.com/user-attachments/assets/ceb9ed83-baed-4e9d-8db0-d85c571171f3" />
+
 
 
 🧾 Tech Stack
 Frontend
 
 React.js
+
 Tailwind CSS
+
 Lucide Icons
 
 Backend
+
 Node.js
+
 Express.js
-Python bridge (child_process → spawn)
-Machine Learning
+
+Python bridge (child_process)
+
+ML Engine
+
 HuggingFace Transformers
-ProtBERT model
+
+ProtBERT
+
 PyTorch
-
-
 
 🔮 Future Enhancements
 
-Add multi-mask prediction
-Support ProtT5, ESM2, Ankh
-Batch FASTA uploads
-Model accuracy visualization
-Fine-tuning on custom datasets
+Support for ProtT5, ESM-2, Ankh models
+
+Multi-mask simultaneous prediction
+
+Batch FASTA file upload
+
+Attention heatmaps
+
+Fine-tuning module
 
 🧠 Research Importance
 
 Protein sequence completion helps in:
 
 Drug discovery
+
 Structural biology
-Predicting protein function
-Filling gaps in experimental data
-Improving annotation of incomplete sequences
+
+Function prediction
+
+Repairing incomplete experimental datasets
+
+Enhancing annotation pipelines
 
 👨‍💻 Author
 
 Nehal Shaikh
-Data Analyst & Full-Stack Developer
-AI & Protein NLP Research
-GitHub: @Nehalshaikh8698
+AI & DS | Full-Stack Developer | Protein NLP Research
+
+🔗 GitHub: @Nehalshaikh8698
