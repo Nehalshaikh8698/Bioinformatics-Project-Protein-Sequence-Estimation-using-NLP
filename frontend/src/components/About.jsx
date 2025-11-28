@@ -8,3 +8,11 @@ const About = () => {
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">About This Research</h2>
         <p className="text-gray-600 dark:text-gray-300">NLP-driven protein sequence estimation</p>
       </div>
+
+      <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 space-y-4">
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Overview</h3>
+        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+          This research explores Natural Language Processing techniques in modeling 
+          protein sequences. By leveraging pre-trained models like ProtBERT, ProtT5, 
+          and Ankh3, we perform structure/function estimation without evolutionary profiles.
+        </p>
