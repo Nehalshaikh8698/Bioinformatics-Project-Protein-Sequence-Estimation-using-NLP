@@ -24,3 +24,8 @@ const Home = ({ setActiveTab }) => {
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           Leverage state-of-the-art transformer models like ProtBERT, ProtT5, and Ankh3 
+          for rapid, accurate protein sequence analysis
+        </p>
+        <div className="flex gap-4 justify-center pt-4">
+          <button 
+            onClick={() => setActiveTab('analyze')}
