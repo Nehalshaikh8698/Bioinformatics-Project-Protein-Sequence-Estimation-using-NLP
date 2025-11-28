@@ -68,4 +68,8 @@ const Models = () => {
           <div>tokenizer = AutoTokenizer.from_pretrained("Rostlab/prot_bert")</div>
         </div>
       </div>
-   
+    </div>
+  );
+};
+
+export default Models;
