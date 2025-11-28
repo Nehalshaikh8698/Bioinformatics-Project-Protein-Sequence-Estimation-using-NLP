@@ -52,3 +52,11 @@ const Home = ({ setActiveTab }) => {
 
       {/* Features Section */}
       <div className="grid grid-cols-3 gap-8">
+        {[
+          { title: 'Sequence Analysis', desc: 'Extract contextual embeddings and predict protein structure' },
+          { title: 'Model Comparison', desc: 'Compare performance across multiple transformer models' },
+          { title: 'Batch Processing', desc: 'Upload FASTA files for large-scale analysis' }
+        ].map((feature, idx) => (
+          <div key={idx} className="space-y-3">
+            <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
+              <span className="text-2xl">🧬</span>
