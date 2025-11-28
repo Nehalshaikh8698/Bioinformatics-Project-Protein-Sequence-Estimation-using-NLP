@@ -46,7 +46,7 @@ const About = () => {
           <li>• Integration of multimodal biological data</li>
           <li>• Extension to nucleic acid–protein interaction sites</li>
           <li>• Enhanced model interpretability</li>
-          <li>• Real-time prediction APIs</li>
+          <li>• Real-time prediction API's</li>
         </ul>
       </div>
     </div>
