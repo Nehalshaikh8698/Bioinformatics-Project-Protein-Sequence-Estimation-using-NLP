@@ -45,3 +45,12 @@ const About = () => {
         <ul className="space-y-2">
           <li>• Integration of multimodal biological data</li>
           <li>• Extension to nucleic acid–protein interaction sites</li>
+          <li>• Enhanced model interpretability</li>
+          <li>• Real-time prediction API's</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default About;
