@@ -16,3 +16,9 @@ const About = () => {
           protein sequences. By leveraging pre-trained models like ProtBERT, ProtT5, 
           and Ankh3, we perform structure/function estimation without evolutionary profiles.
         </p>
+      </div>
+
+      <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Key Findings</h3>
+        <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+          <li className="flex items-start gap-2">
