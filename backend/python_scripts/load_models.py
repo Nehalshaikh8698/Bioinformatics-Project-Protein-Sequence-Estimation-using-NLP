@@ -10,4 +10,6 @@ def load_protbert_model():
     return unmasker
 
 # cache model globally to avoid reloading
+MODEL = load_protbert_model()
 
+d
