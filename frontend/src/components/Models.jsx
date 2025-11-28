@@ -34,4 +34,11 @@ const Models = () => {
                   {model.params}
                 </div>
               </div>
-
+              <div className="bg-green-50 dark:bg-green-900/30 p-2 rounded text-center">
+                <div className="text-xs text-gray-600 dark:text-gray-400">
+                  Accuracy
+                </div>
+                <div className="text-sm font-semibold text-gray-900 dark:text-white">
+                  {model.accuracy}
+                </div>
+  
