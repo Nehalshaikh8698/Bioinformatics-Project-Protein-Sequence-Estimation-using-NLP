@@ -18,4 +18,12 @@ const Models = () => {
           <div
             key={key}
             className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition"
-  
+          >
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              {model.name}
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+              {model.description}
+            </p>
+            <div className="grid grid-cols-3 gap-3">
+ 
