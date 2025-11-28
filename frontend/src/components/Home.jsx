@@ -60,3 +60,9 @@ const Home = ({ setActiveTab }) => {
           <div key={idx} className="space-y-3">
             <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center">
               <span className="text-2xl">🧬</span>
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{feature.title}</h3>
+            <p className="text-gray-600 dark:text-gray-300">{feature.desc}</p>
+          </div>
+        ))}
+      </div>
