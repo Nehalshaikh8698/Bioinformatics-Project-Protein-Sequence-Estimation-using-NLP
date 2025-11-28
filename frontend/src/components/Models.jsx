@@ -58,4 +58,9 @@ const Models = () => {
       {/* Model Integration Guide */}
       <div className="bg-gray-900 text-white p-8 rounded-xl border border-gray-700">
         <h3 className="text-xl font-bold mb-4">Model Integration Guide</h3>
+        <div className="bg-gray-800 p-4 rounded-lg font-mono text-sm space-y-2">
+          <div className="text-green-400"># Backend model loading example</div>
+          <div>from transformers import AutoModel, AutoTokenizer</div>
+          <div className="text-gray-400"># Place in /backend/models/loader.py</div>
+          <div className="mt-3">
 
