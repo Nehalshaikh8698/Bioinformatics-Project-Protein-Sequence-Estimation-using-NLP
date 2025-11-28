@@ -45,3 +45,10 @@ const Home = ({ setActiveTab }) => {
           <div key={idx} className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 text-center transition-colors">
             <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">{metric.value}</div>
             <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{metric.label}</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">{metric.desc}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* Features Section */}
+      <div className="grid grid-cols-3 gap-8">
