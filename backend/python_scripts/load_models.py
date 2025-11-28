@@ -3,5 +3,6 @@ import torch
 
 MODEL_PATH = "../ml_models/protbert"  # relative to this file
 
-
+def load_protbert_model():
+ 
 
