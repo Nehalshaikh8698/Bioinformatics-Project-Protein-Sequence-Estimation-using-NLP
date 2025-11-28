@@ -9,4 +9,5 @@ def load_protbert_model():
     unmasker = pipeline("fill-mask", model=model, tokenizer=tokenizer, top_k=5)
     return unmasker
 
+# cache model globally to avoid reloading
 
