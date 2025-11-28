@@ -13,4 +13,4 @@ def load_protbert_model():
 MODEL = load_protbert_model()
 
 def get_model():
-    re
+    return MODEL
