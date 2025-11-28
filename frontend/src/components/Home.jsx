@@ -66,3 +66,9 @@ const Home = ({ setActiveTab }) => {
           </div>
         ))}
       </div>
+
+      {/* Research Highlights */}
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Research Highlights</h2>
+        <div className="grid grid-cols-2 gap-6">
+          <div className="bg-white dark:bg-gray-800 p-5 rounded-lg">
