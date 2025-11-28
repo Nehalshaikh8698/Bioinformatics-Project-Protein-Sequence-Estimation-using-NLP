@@ -41,4 +41,13 @@ const Models = () => {
                 <div className="text-sm font-semibold text-gray-900 dark:text-white">
                   {model.accuracy}
                 </div>
-  
+              </div>
+              <div className="bg-purple-50 dark:bg-purple-900/30 p-2 rounded text-center">
+                <div className="text-xs text-gray-600 dark:text-gray-400">
+                  Speed
+                </div>
+                <div className="text-sm font-semibold text-gray-900 dark:text-white">
+                  Fast
+                </div>
+              </div>
+
