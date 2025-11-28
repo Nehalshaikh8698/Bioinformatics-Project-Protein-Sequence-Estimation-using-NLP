@@ -22,3 +22,13 @@ const About = () => {
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Key Findings</h3>
         <ul className="space-y-2 text-gray-700 dark:text-gray-300">
           <li className="flex items-start gap-2">
+            <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <span>Up to 87% precision in sequence prediction</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <span>40x faster inference than MSA approaches</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+   
