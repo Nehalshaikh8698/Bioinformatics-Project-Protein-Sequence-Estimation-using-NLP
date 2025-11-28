@@ -11,3 +11,11 @@ const Models = () => {
         <p className="text-gray-600 dark:text-gray-300">
           State-of-the-art transformer architectures
         </p>
+      </div>
+
+      <div className="grid grid-cols-2 gap-6">
+        {Object.entries(MODELS).map(([key, model]) => (
+          <div
+            key={key}
+            className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition"
+  
