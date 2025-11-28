@@ -37,4 +37,11 @@ const About = () => {
             <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
             <span>Multi-task learning enhances robustness</span>
           </li>
-      
+        </ul>
+      </div>
+
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-xl">
+        <h3 className="text-xl font-semibold mb-3">Future Directions</h3>
+        <ul className="space-y-2">
+          <li>• Integration of multimodal biological data</li>
+          <li>• Extension to nucleic acid–protein interaction sites</li>
