@@ -81,4 +81,14 @@ const Home = ({ setActiveTab }) => {
             <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Multi-Task Learning</h4>
             <p className="text-sm text-gray-600 dark:text-gray-300">
               Fine-tuned architecture enhances robustness across protein families
-  
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+
+export default Home;
