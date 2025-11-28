@@ -12,4 +12,5 @@ def load_protbert_model():
 # cache model globally to avoid reloading
 MODEL = load_protbert_model()
 
-d
+def get_model():
+    re
