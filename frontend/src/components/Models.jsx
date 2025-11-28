@@ -50,4 +50,12 @@ const Models = () => {
                   Fast
                 </div>
               </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Model Integration Guide */}
+      <div className="bg-gray-900 text-white p-8 rounded-xl border border-gray-700">
+        <h3 className="text-xl font-bold mb-4">Model Integration Guide</h3>
 
