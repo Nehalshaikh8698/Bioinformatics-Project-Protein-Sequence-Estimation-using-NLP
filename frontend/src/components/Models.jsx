@@ -26,4 +26,12 @@ const Models = () => {
               {model.description}
             </p>
             <div className="grid grid-cols-3 gap-3">
- 
+              <div className="bg-blue-50 dark:bg-blue-900/30 p-2 rounded text-center">
+                <div className="text-xs text-gray-600 dark:text-gray-400">
+                  Parameters
+                </div>
+                <div className="text-sm font-semibold text-gray-900 dark:text-white">
+                  {model.params}
+                </div>
+              </div>
+
