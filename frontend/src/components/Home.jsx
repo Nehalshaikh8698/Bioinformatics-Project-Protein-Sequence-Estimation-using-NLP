@@ -35,3 +35,13 @@ const Home = ({ setActiveTab }) => {
           </button>
           <button className="px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg font-medium hover:border-gray-400 dark:hover:border-gray-500 transition-colors">
             Documentation
+          </button>
+        </div>
+      </div>
+
+      {/* Key Metrics */}
+      <div className="grid grid-cols-4 gap-6">
+        {metrics.map((metric, idx) => (
+          <div key={idx} className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 text-center transition-colors">
+            <div className="text-3xl font-bold text-gray-900 dark:text-white mb-1">{metric.value}</div>
+            <div className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{metric.label}</div>
