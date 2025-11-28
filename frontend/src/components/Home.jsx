@@ -29,3 +29,9 @@ const Home = ({ setActiveTab }) => {
         <div className="flex gap-4 justify-center pt-4">
           <button 
             onClick={() => setActiveTab('analyze')}
+            className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
+          >
+            Start Analysis
+          </button>
+          <button className="px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg font-medium hover:border-gray-400 dark:hover:border-gray-500 transition-colors">
+            Documentation
