@@ -31,4 +31,10 @@ const About = () => {
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-   
+            <span>Effective for orphan proteins</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+            <span>Multi-task learning enhances robustness</span>
+          </li>
+      
