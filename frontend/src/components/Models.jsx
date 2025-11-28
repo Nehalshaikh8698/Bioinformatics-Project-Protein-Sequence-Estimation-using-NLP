@@ -63,4 +63,9 @@ const Models = () => {
           <div>from transformers import AutoModel, AutoTokenizer</div>
           <div className="text-gray-400"># Place in /backend/models/loader.py</div>
           <div className="mt-3">
-
+            model = AutoModel.from_pretrained("Rostlab/prot_bert")
+          </div>
+          <div>tokenizer = AutoTokenizer.from_pretrained("Rostlab/prot_bert")</div>
+        </div>
+      </div>
+   
